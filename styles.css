@@ -1,0 +1,81 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit;}
+
+body {
+    background-color: rgb(106,161,208);
+    font-family: sans-serif;
+    color: rgb(231,233,235);
+}
+
+
+::placeholder {
+    font-family: sans-serif;
+    font-size:15px;
+    font-style:italic;
+}
+
+textarea {
+    background-color:rgb(106,161,208);
+    border:2px solid white;
+    font-family:sans-serif;
+    font-size:15px;
+    width:300px;
+    outline: none;
+    color:white;
+    margin-bottom:25px;
+}
+
+select {
+    background:transparent;
+    font-size:15px;
+    border:2px solid white;
+    color: white;
+    width:300px;
+    outline: none;
+    margin-bottom:25px;
+}
+
+input {
+    padding:10px;
+    background:transparent;
+    font-family:sans-serif;
+    font-size:15px;
+    border:2px solid white;
+    width:300px;
+    outline: none;
+    color:white;
+    margin-bottom: 25px;
+}
+input:focus, select:focus, textarea:focus{
+    border: 2px solid #2b6998;
+    animation-name: transition;
+    animation-duration: 4s;
+}
+
+input:hover, select:hover, textarea:hover{
+    border: 2px solid #2b6998;
+}
+
+form{
+    display:flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+div {
+    display:block;
+    width:300px;
+    padding:30px;
+}
+
+label {
+    margin-bottom:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+@keyframes transition {
+    from {background-color: purple;}
+    to {background-color: black;}
+  }
